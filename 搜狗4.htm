@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+    .clearfix::after{
+      content:"";
+      width: 0;
+      height: 0;
+      font-size:0;
+      display: block;
+      clear: both;
+    }
+    .buju{
+      width: 1000px;
+      margin:10px auto;
+      position: relative;
+    }
+    .buju .zuo{
+      width: 193px;
+      height: 40px;
+      float:left;
+      background:url(http://dl.pinyin.sogou.com/index/header/logo.png)no-repeat;
+    }
+   .buju .biao{
+      width: 350px;
+      height: 50px;
+      float:right;
+    }
+    .buju .biao #key{
+        width: 290px;
+        height: 25px;
+        outline: none;
+        border: 2px solid #eee;
+        text-indent: 10px;
+        float: left;
+    } 
+       .buju .biao #key:focus {
+        border: 3px solid #0f0;
+    }
+    .buju .biao #btn {  
+        width: 30px;
+        height: 30px;
+        text-indent: -9999em;
+        border: none;
+        outline: none;
+        background: url("http://dl.pinyin.sogou.com/index/header/search_box.png");
+        background-position: -293px 0;
+        margin-left: -2px;
+        float: left;
+    }
+    .biaodan{
+      width: 100%;
+      height: 42px;
+      background-color:#FC6B2D;
+      
+    }
+    .biaoyi{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+      
+    }
+    .biaodan li{
+      float:left;
+      padding: 13px 48px;
+     position: relative;
+    }   
+    .biaodan  li a {
+        color: #fff;
+        text-decoration: none;
+    }
+     .biaodan li.new::after {
+        content: "";
+        width:26px;
+        height: 14px;
+        background: url('http://dl.pinyin.sogou.com/index/2.0/new.png') no-repeat 0px 0px;
+        position: absolute;
+        top: -16px;
+        left: 63px; 
+    }
+    .biaodan  li:hover {
+        background-color: #F00;
+    }
+
+    .zhongda {
+      position: relative;
+        height: 400px;
+        background: url('http://dl.pinyin.sogou.com/index/2.0/banner_8.0.2.jpg')  center;
+    }
+    .zhongda .zhongyi{
+        width: 241px;
+        height: 60px;
+        display: inline-block;
+        background: url('http://dl.pinyin.sogou.com/index/2.0/btn_down_one_8.0.1.png')  left  top;
+        position: absolute;
+        right: 480px;
+        bottom: 20px;
+    }
+    .wenzi .wenyi{
+      width: 1000px;
+      height: 400px;
+      margin:0 auto;
+        position: relative;
+}
+    .wenzi .wenyi .wener{
+      position: absolute;
+       left: 574px;
+      top: -150px; 
+    }
+       .wenzi .wenyi .wensan{
+      position: absolute;
+       left: 750px;
+      top: -150px; 
+    }
+       .wenzi .wenyi .wensi{
+      position: absolute;
+       left: 574px;
+      top: -130px; 
+    }
+    .wenzi .wenyi .tupian{
+      position: absolute;
+       left: 920px;
+      top: -150px; 
+    }
+       .wenzi .wenyi .tuyi{
+      position: absolute;
+       left: 920px;
+      top: -60px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="buju  clearfix">
+    <div class="zuo"></div>
+    <div class="you"></div>
+ 
+  <div class="biao clearfix">
+    <input type="text" name="key" id="key" placeholder="有你喜欢的皮肤">
+            <input type="submit" id="btn" value="搜索">
+  </div>
+  <div class="zhong">
+    <div class="jian"><a href="#"></a></div>
+  </div> </div>
+  <div class="biaodan">
+    <ul class="biaoyi">
+      <li >
+        <a href="#">首页</a>
+      </li>
+        <li >
+        <a href="#">皮肤</a>
+      </li>  <li >
+        <a href="#">词库</a>
+      </li>  <li class="new">
+        <a href="#">字媒体</a>
+      </li>  <li >
+        <a href="#">帮助</a>
+      </li>  <li >
+        <a href="#">升级日记</a>
+      </li>  <li >
+        <a href="#">论坛</a>
+      </li>
+    </ul>
+  </div>
+  <div class="zhongda">
+    <div ><a class="zhongyi"  href="#" ></a></div>
+   
+  </div>
+  <div class="wenzi">
+    <div class="wenyi">
+      <div class=wener>更新日期 : 2016-05-12</div>
+      <div class="wensan"><a href="www.baidu.com">新版特性</a></div>
+      <div class="wensi">支持：XP / WIN7 / WIN8 / WIN10</div>
+      <div class="tupian"><img src="http://dl.pinyin.sogou.com/index/2.0/mobile_qrcode_7.7.png" alt=""></div>
+   <div class="tuyi"><a href="http://shouji.sogou.com/sapp/media/?site=20150212website"></a><img src="http://dl.pinyin.sogou.com/index/2.0/btn_down_mobile_8.0.1.png" alt=""></div>  
+    </div>
+  </div>
+  <div class="pifu">
+    <div class="piyi">
+      <div class="pier"></div>
+      <div class="pisan"></div>
+    </div>
+  </div>
+</body>
+</html>
